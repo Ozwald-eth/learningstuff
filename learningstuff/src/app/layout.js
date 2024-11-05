@@ -1,5 +1,5 @@
 // app/layout.js
-import "./globals.css";
+import "../../styles/globals.css";
 
 export const metadata = {
   title: "Learning Scrapbook",
