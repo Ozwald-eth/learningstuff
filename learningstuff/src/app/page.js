@@ -54,12 +54,21 @@ export default function HomePage() {
   };
 
   return (
-    <div className="p-6">
-      <h1 className="text-3xl font-bold mb-6">Learning Scrapbook</h1>
+    <div style={{ padding: "1.5rem" }}>
+      <h1
+        style={{ fontSize: "2rem", fontWeight: "bold", marginBottom: "1.5rem" }}
+      >
+        Learning Scrapbook
+      </h1>
 
-      <div className="flex space-x-4 mb-6">
+      <div style={{ display: "flex", gap: "1rem", marginBottom: "1.5rem" }}>
         <button
-          className="bg-blue-600 text-white p-4 rounded-full"
+          style={{
+            backgroundColor: "#2563eb", // Blue-600
+            color: "white",
+            padding: "1rem",
+            borderRadius: "9999px", // Rounded full
+          }}
           onClick={() => setShowModal(true)}
         >
           Add Resource
@@ -83,7 +92,13 @@ export default function HomePage() {
                       ref={provided.innerRef}
                       {...provided.draggableProps}
                       {...provided.dragHandleProps}
-                      className="bg-white p-4 rounded-lg shadow mb-4"
+                      style={{
+                        backgroundColor: "white",
+                        padding: "1rem",
+                        borderRadius: "0.5rem", // Rounded-lg
+                        boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)", // Shadow
+                        marginBottom: "1rem",
+                      }}
                     >
                       <ResourceItem
                         resource={resource}
