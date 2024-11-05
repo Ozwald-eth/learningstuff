@@ -1,5 +1,5 @@
 "use client";
-import "./globals.css";
+import "../../styles/globals.css";
 import { useState, useEffect } from "react";
 import { db } from "../firebase";
 import { ref, onValue, remove, update } from "firebase/database";
