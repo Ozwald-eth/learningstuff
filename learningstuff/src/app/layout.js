@@ -1,17 +1,9 @@
-// app/layout.js
-import "../../styles/globals.css";
-
-export const metadata = {
-  title: "Learning Scrapbook",
-  description: "A place to manage resources",
-};
+import "./globals.css";
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body style={{ backgroundColor: "#f9f9f9", padding: "1rem" }}>
-        {children}
-      </body>
+      <body className="bg-gray-100 text-gray-900">{children}</body>
     </html>
   );
 }
